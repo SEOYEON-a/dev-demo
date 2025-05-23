@@ -20,8 +20,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                // Jenkins가 연결된 Git 저장소에서 최신 코드 체크아웃
-                checkout scm
+                checkout scm    // Jenkins가 연결된 Git 저장소에서 최신 코드 체크아웃
             }
         }
 
