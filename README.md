@@ -36,8 +36,9 @@
 
 ## 3. 트러블 슈팅
 
-- [EC2 서버의 공인 IP와 RDS 인바운드 규칙 불일치 이슈](https://github.com/SEOYEON-a/Dixcord_React/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_Anotation)
-- [STS 3 버전에서 프로젝트 빌드 오류 이슈](https://github.com/SEOYEON-a/Dixcord_React/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC)
+- [EC2 서버의 공인 IP와 RDS 인바운드 규칙 불일치 이슈](https://github.com/SEOYEON-a/dev-demo/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_EC2-%EC%84%9C%EB%B2%84%EC%9D%98-%EA%B3%B5%EC%9D%B8-IP%EC%99%80-RDS-%EC%9D%B8%EB%B0%94%EC%9A%B4%EB%93%9C-%EA%B7%9C%EC%B9%99-%EB%B6%88%EC%9D%BC%EC%B9%98
+)
+- [STS 3 버전에서 프로젝트 빌드 오류 이슈](https://github.com/SEOYEON-a/dev-demo/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_STS-3-%EB%B2%84%EC%A0%84%EC%97%90%EC%84%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%B9%8C%EB%93%9C-%EC%98%A4%EB%A5%98)
 
 <br>
 
