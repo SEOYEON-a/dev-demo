@@ -30,14 +30,13 @@
 
 | 배포 결과 |
 |----------|
-|![demo-page](https://github.com/user-attachments/assets/81420684-c2ec-410b-93c1-b41cf02f5e47)|
+|![demo-page](https://github.com/user-attachments/assets/4667af61-bed6-4e5d-a3e0-f7b3dd87a7fa)|
 
 <br>
 
 ## 3. 트러블 슈팅
 
 - [EC2 서버의 공인 IP와 RDS 인바운드 규칙 불일치 이슈](https://github.com/SEOYEON-a/Dixcord_React/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_Anotation)
-
 - [STS 3 버전에서 프로젝트 빌드 오류 이슈](https://github.com/SEOYEON-a/Dixcord_React/wiki/%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC)
 
 <br>
