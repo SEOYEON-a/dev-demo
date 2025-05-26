@@ -1,6 +1,6 @@
 # CI/CD-based Spring Boot Web Application Deployment Project
 
-![Dixcord](https://github.com/user-attachments/assets/a6cd8af9-cc5b-4439-9245-0ab718cbbf04)
+![prj](https://github.com/user-attachments/assets/4667af61-bed6-4e5d-a3e0-f7b3dd87a7fa)
 
 
 ## 프로젝트 소개
