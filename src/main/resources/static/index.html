@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <title>시작페이지</title>
+    <meta charset="UTF-8">
+    <title>이서연's Spring Boot Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f3f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.1em;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #495057;
+            font-size: 1.3em;
+            margin-top: 30px;
+        }
+
+        p {
+            color: #606c76;
+            line-height: 1.0;
+            margin: 10px 0;
+        }
+
+        .stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 24px;
+            font-size: 1em;
+            background-color: #FF9900;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #cc7a00;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #868e96;
+        }
+    </style>
 </head>
 <body>
-    <h2>CI/CD 특강입니다</h2>
+    <div class="container">
+		<h1>CI/CD-based Spring Boot Web Application Deployment Project</h1>
+
+		<p>이 프로젝트는 Jenkins, Docker, AWS EC2를 통해 완전 자동화된 Spring Boot 배포 환경을 구축한 경험을 담고 있습니다.</p>
+		<p>“자동화가 곧 효율성이다” — 실무 배포 파이프라인 구축의 가치를 체감했습니다.</p>
+
+        <h2>🛠 Tech Stack</h2>
+        <div class="stack">
+            <div class="tag">Spring Boot</div>
+            <div class="tag">Jenkins</div>
+            <div class="tag">Docker</div>
+            <div class="tag">AWS EC2</div>
+            <div class="tag">AWS RDS</div>
+            <div class="tag">Git</div>
+            <div class="tag">MySQL</div>
+        </div>
+
+        <h2>📂 GitHub</h2>
+        <a class="btn" href="https://github.com/SEOYEON-a/dev-demo" target="_blank">프로젝트 보기</a>
+
+        <footer>
+            © 2025 이서연. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
