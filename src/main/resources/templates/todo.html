@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>My TODO List</title>
+    <style>
+        body {
+            font-family: 'Pretendard', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 40px 30px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.9em;
+            color: #212529;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #ced4da;
+            border-radius: 10px;
+            font-size: 1em;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 18px;
+            background-color: #4dabf7;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #339af0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            background-color: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .todo-content {
+            font-size: 1.05em;
+            color: #343a40;
+        }
+
+        .todo-done {
+            color: #868e96;
+            text-decoration: line-through;
+        }
+
+        .btn-group form {
+            display: inline;
+        }
+
+        .btn {
+            padding: 6px 10px;
+            font-size: 0.85em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .done-btn {
+            background-color: #63e6be;
+            color: #212529;
+        }
+
+        .done-btn:hover {
+            background-color: #38d9a9;
+        }
+
+        .delete-btn {
+            background-color: #ffa8a8;
+            color: #212529;
+        }
+
+        .delete-btn:hover {
+            background-color: #ff6b6b;
+        }
+
+        .done-icon {
+            margin-right: 8px;
+            color: #20c997;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 My TODO List</h1>
+
+        <form action="/add" method="post">
+            <input type="text" name="content" placeholder="할 일을 입력하세요" required />
+            <button type="submit">추가</button>
+        </form>
+
+        <ul>
+            <li th:each="todo : ${todos}">
+                <span th:class="${todo.done} ? 'todo-content todo-done' : 'todo-content'">
+                    <span th:if="${todo.done}" class="done-icon">✔</span>
+                    <span th:text="${todo.content}"></span>
+                </span>
+
+                <div class="btn-group">
+                    <form th:if="${!todo.done}" th:action="@{'/done/' + ${todo.id}}" method="post">
+                        <button type="submit" class="btn done-btn">완료</button>
+                    </form>
+                    <form th:action="@{'/delete/' + ${todo.id}}" method="post">
+                        <button type="submit" class="btn delete-btn">삭제</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
