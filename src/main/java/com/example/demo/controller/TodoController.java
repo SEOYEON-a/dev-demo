@@ -29,7 +29,6 @@ public class TodoController {
     @PostMapping("/add")
     public String addTodo(@RequestParam String content) {
         todoRepository.save(new Todo(content));
-        System.out.println("추가 요청 content = " + content);
         return "redirect:/";
     }
     
@@ -42,7 +41,6 @@ public class TodoController {
         return "redirect:/";
     }
 
-    // 삭제 처리
     @PostMapping("/delete/{id}")
     public String deleteTodo(@PathVariable Long id) {
         todoRepository.deleteById(id);

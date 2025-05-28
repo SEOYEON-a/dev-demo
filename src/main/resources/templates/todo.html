@@ -126,7 +126,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🌿 My TODO List</h1>
+        <h1>My ToDo List</h1>
 
         <form action="/add" method="post">
             <input type="text" name="content" placeholder="할 일을 입력하세요" required />
@@ -135,11 +135,10 @@
 
         <ul>
             <li th:each="todo : ${todos}">
-                <span th:class="${todo.done} ? 'todo-content todo-done' : 'todo-content'">
-                    <span th:if="${todo.done}" class="done-icon">✔</span>
-                    <span th:text="${todo.content}"></span>
-                </span>
-
+				<span class="todo-content">
+				    <span th:if="${todo.done}" class="done-icon">✔</span>
+				    <span th:text="${todo.content}"></span>
+				</span>
                 <div class="btn-group">
                     <form th:if="${!todo.done}" th:action="@{'/done/' + ${todo.id}}" method="post">
                         <button type="submit" class="btn done-btn">완료</button>
