@@ -1,6 +1,6 @@
 # DevOps-Based Spring Boot Todo Project
 
-![Todo](https://github.com/user-attachments/assets/799ece0a-f1e3-42e9-bf88-9de63e6b50c3)
+![Todo](https://github.com/user-attachments/assets/d400cbb4-871b-40dc-90b2-7fc1498c4d1c)
 
 
 ## 프로젝트 소개
@@ -32,7 +32,7 @@
 
 | 주요 기능 |
 |----------|
-|![Todo](https://github.com/user-attachments/assets/799ece0a-f1e3-42e9-bf88-9de63e6b50c3)|
+|![Todo](https://github.com/user-attachments/assets/d400cbb4-871b-40dc-90b2-7fc1498c4d1c)|
 
 <br>
 
