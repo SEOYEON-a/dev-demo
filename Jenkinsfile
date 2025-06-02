@@ -12,7 +12,7 @@ pipeline {
         JAR_FILE_NAME = "app.jar"                     // 복사할 JAR 파일 이름
         PORT = "80"                                   // 컨테이너와 연결할 포트
         REMOTE_USER = "ec2-user"                      // 원격 서버 사용자
-        REMOTE_HOST = "3.35.135.153"                  // 원격 서버 IP (공개 IP)
+        REMOTE_HOST = "15.164.194.9"                  // 원격 서버 IP (공개 IP)
         REMOTE_DIR = "/home/ec2-user/deploy"          // 원격 서버에 파일을 복사할 경로
         SSH_CREDENTIALS_ID = "29ab1010-9d1a-4d7f-aab9-1800eb204b7e" // Jenkins SSH 자격 증명 ID
     }
