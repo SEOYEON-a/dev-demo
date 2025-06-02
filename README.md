@@ -1,14 +1,14 @@
-# CI/CD-based Spring Boot Web Application Deployment Project
+# DevOps-Based Spring Boot Todo Project
 
-![prj](https://github.com/user-attachments/assets/4667af61-bed6-4e5d-a3e0-f7b3dd87a7fa)
+![Todo](https://github.com/user-attachments/assets/d400cbb4-871b-40dc-90b2-7fc1498c4d1c)
 
 
 ## 프로젝트 소개
 
-- 이 프로젝트는 Jenkins를 활용해 Spring Boot 애플리케이션을 AWS EC2에 자동으로 빌드, 테스트, 배포하는 CI/CD 파이프라인을 구축한 경험을 담고 있습니다.
-- Docker를 이용해 애플리케이션을 컨테이너 이미지로 빌드하고, EC2 서버에서 실행하여 일관된 운영 환경을 제공했습니다.
-- Jenkins 파이프라인 스크립트를 작성해 빌드, 테스트, 배포를 자동화하고, 반복 작업의 효율성을 높였습니다.
-- Spring Boot와 JPA를 기반으로 AWS RDS(MySQL)와 연동해 데이터베이스 테이블 자동 생성 기능도 구현했습니다.
+- 이 프로젝트는 사용자가 할 일을 추가, 완료 처리, 삭제할 수 있는 웹 기반 ToDo List 애플리케이션입니다.  
+- 단순 기능 구현뿐만 아니라, Jenkins를 활용해 Spring Boot 애플리케이션을 AWS EC2에 자동으로 빌드, 테스트, 배포하는 CI/CD 파이프라인을 구축하는 데 중점을 두었습니다.  
+- Docker를 이용해 애플리케이션을 컨테이너 이미지로 빌드하고 EC2 서버에서 실행하여 일관된 운영 환경을 제공하였습니다.  
+- 또한, Spring Boot와 JPA를 기반으로 AWS RDS(MySQL)와 연동하여 데이터베이스 테이블 자동 생성 기능도 구현하였습니다.
 
 <br>
 
@@ -22,15 +22,17 @@
   
 <br>
 
-## 2. 배포 결과 확인
+## 2. 주요 기능
 
-### [배포 결과]
-- EC2 서버에 배포된 애플리케이션은 단일 HTML 페이지(index.html)를 통해 구성되며, 프로젝트 개요와 기술 스택을 소개합니다.
-- GitHub 링크를 통해 실제 배포 상태를 확인할 수 있습니다.
+### [주요 기능]
+- Jenkins를 이용한 CI/CD 파이프라인 구축: 코드 변경 시 자동으로 빌드, 테스트, 배포 진행  
+- Docker 이미지 빌드 및 배포: 컨테이너화로 일관된 실행 환경 보장  
+- Spring Boot 애플리케이션과 AWS RDS(MySQL) 연동: JPA를 통한 데이터베이스 테이블 자동 생성  
+- ToDo List 기능 구현: 할 일 추가, 완료 처리, 삭제 기능 제공
 
-| 배포 결과 |
+| 주요 기능 |
 |----------|
-|![demo-page](https://github.com/user-attachments/assets/4667af61-bed6-4e5d-a3e0-f7b3dd87a7fa)|
+|![Todo](https://github.com/user-attachments/assets/d400cbb4-871b-40dc-90b2-7fc1498c4d1c)|
 
 <br>
 
@@ -44,12 +46,13 @@
 
 ## 4. 개선 목표
 
-- API: REST API 및 DB 연동 기능 확장을 통해 서비스 완성도 향상 예정
-- 테스트: Jenkins 파이프라인에 단위 테스트 및 빌드 상태 체크 자동화 추가
-- 보안: Jenkins와 EC2 접근 권한 최소화 및 HTTPS 적용 검토
+- API: REST API 및 데이터베이스 연동 기능을 확장하여 서비스 완성도 향상 예정  
+- 테스트: Jenkins 파이프라인에 단위 테스트 및 빌드 상태 체크 자동화를 추가해 품질 관리 강화  
 
 <br>
 
 ## 5. 프로젝트 후기
 
-실제 운영 환경에 배포하는 전 과정을 경험하며 CI/CD 흐름에 대한 깊은 이해를 쌓았고, Docker·Jenkins·AWS 간 연동 이슈를 직접 해결하며 실무 수준의 문제 해결 역량을 키울 수 있었습니다.
+- 이번 프로젝트를 통해 Jenkins와 Docker를 활용한 자동화된 CI/CD 파이프라인 구축 경험을 쌓았습니다.  
+- AWS EC2와 RDS 환경에서의 배포 및 운영 과정을 직접 다뤄, 실제 서비스 운영에 필요한 DevOps 역량을 강화할 수 있었습니다.  
+- Spring Boot와 JPA 기반 애플리케이션 개발과 데이터베이스 연동 과정도 체계적으로 익히게 되어 매우 의미 있는 프로젝트였습니다.
